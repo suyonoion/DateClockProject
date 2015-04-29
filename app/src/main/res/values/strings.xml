@@ -1,0 +1,14 @@
+<!--
+  Copyright (c) 2015 by Suyono (ion).
+  All rights reserved.
+
+  This product is protected by copyright and distributed under
+  licenses restricting copying, distribution and decompilation.
+  -->
+
+<resources>
+    <string name="app_name">Date Clock</string>
+    <string name="action_settings">Settings</string>
+    <string name="copyright1">"© 2015 by Suyono (ion).
+All rights reserved."</string>
+</resources>

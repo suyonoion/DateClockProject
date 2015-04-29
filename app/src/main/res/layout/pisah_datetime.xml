@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!--
+  Copyright (c) 2015 by Suyono (ion).
+  All rights reserved.
+
+  This product is protected by copyright and distributed under
+  licenses restricting copying, distribution and decompilation.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity" android:orientation="vertical" android:gravity="top|center">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="#90e57dff" android:orientation="horizontal" android:gravity="center" android:layout_marginBottom="10dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="STATUSBAR" android:textColor="#ff2523ff"/>
+    </LinearLayout>
+    <ImageView android:contentDescription="garis" android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="#d827c506"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="17dip" android:baselineAligned="false" android:background="#00000000" android:gravity="center">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="left|center" android:layout_gravity="left">
+            <com.suyonoion.date.dateionHARI android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffd014ff" android:background="#00000000" android:layout_gravity="right" android:gravity="right" android:textSize="10dip" android:paddingLeft="2.0dip"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:gravity="center">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:layout_gravity="center_horizontal">
+                <com.suyonoion.clock.clockion android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffd014ff" android:background="#00000000" android:layout_gravity="center_horizontal" android:textIsSelectable="false" android:typeface="normal" android:textSize="10dip"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center|right" android:layout_gravity="right">
+            <com.suyonoion.date.dateionTGL android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffd014ff" android:background="#00000000" android:layout_gravity="right" android:gravity="right" android:textSize="10dip" android:paddingLeft="2.0dip"/>
+            <com.suyonoion.date.dateionBULAN android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffd014ff" android:background="#00000000" android:layout_gravity="right" android:gravity="right" android:textSize="10dip" android:paddingLeft="2.0dip"/>
+            <com.suyonoion.date.dateionTAHUN android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffd014ff" android:background="#00000000" android:layout_gravity="right" android:gravity="right" android:textSize="10dip" android:paddingLeft="2.0dip"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:contentDescription="garis" android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="#d827c506"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="36dip" android:baselineAligned="false" android:background="#00000000">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:textAlignment="center" android:gravity="center">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:textAlignment="center" android:gravity="center" android:paddingLeft="5dp" android:paddingRight="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Jam" android:focusable="false" android:textColor="#ff372cff" android:textSize="10dip"/>
+                <com.suyonoion.clock.ClockionJAM android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#ffff1510" android:background="#00000000"/>
+            </LinearLayout>
+            <ImageView android:contentDescription="Garis" android:layout_width="0.5dip" android:layout_height="fill_parent" android:src="#d827c506"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:textAlignment="center" android:gravity="center" android:paddingLeft="5dp" android:paddingRight="5dp">
+                <com.suyonoion.clock.ClockionMENIT android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="17dip" android:textColor="#ffffc224" android:background="#00000000"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Menit" android:textColor="#f1721313" android:textSize="10dip"/>
+            </LinearLayout>
+            <ImageView android:contentDescription="Garis" android:layout_width="0.5dip" android:layout_height="fill_parent" android:src="#d827c506"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/konten_tengah" android:layout_width="fill_parent" android:layout_height="36dip" android:layout_weight="1.0" android:gravity="center">
+            <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@+id/konten__baris1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            </LinearLayout>
+            <ImageView android:contentDescription="garis" android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="#d827c506"/>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/konten__baris2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:contentDescription="Garis" android:layout_width="0.5dip" android:layout_height="fill_parent" android:src="#d827c506"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:textAlignment="center" android:gravity="center" android:paddingLeft="5dp" android:paddingRight="5dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Detik" android:textColor="#ff372cff" android:textSize="10dip"/>
+            <com.suyonoion.clock.ClockionDETIK android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#ffe61aa2" android:background="#00000000"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:contentDescription="garis" android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="#d827c506"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="17dip" android:baselineAligned="false" android:background="#00000000">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="left" android:layout_gravity="left">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Jam : " android:textColor="#f1ab1919" android:textSize="10dip"/>
+            <com.suyonoion.clock.ClockionJAM android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffff1510" android:background="#00000000"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:gravity="center">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:layout_gravity="center_horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Menit : " android:textColor="#f1ab1919" android:layout_gravity="center_horizontal" android:textSize="10dip"/>
+                <com.suyonoion.clock.ClockionMENIT android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffff1510" android:background="#00000000" android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:layout_gravity="right">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Detik : " android:textColor="#f1ab1919" android:layout_gravity="right" android:gravity="right" android:textSize="10dip"/>
+            <com.suyonoion.clock.ClockionDETIK android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffff1510" android:background="#00000000" android:layout_gravity="right" android:gravity="right"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:contentDescription="garis" android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="#d827c506"/>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="#90e57dff" android:orientation="horizontal" android:gravity="center" android:layout_marginTop="20dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="DATE" android:textColor="#ff2523ff"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Kabeh : " android:textColor="#f1ab1919" android:layout_gravity="right" android:gravity="right" android:textSize="10dip"/>
+        <com.suyonoion.date.dateion android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#f1ff1f1f" android:background="#00000000" android:layout_gravity="right" android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Dino : " android:textColor="#f1ab1919" android:layout_gravity="right" android:gravity="right" android:textSize="10dip"/>
+        <com.suyonoion.date.dateionHARI android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#f1ff1f1f" android:background="#00000000" android:layout_gravity="right" android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Tanggal : " android:textColor="#f1ab1919" android:layout_gravity="right" android:gravity="right" android:textSize="10dip"/>
+        <com.suyonoion.date.dateionTGL android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#f1ff1f1f" android:background="#00000000" android:layout_gravity="right" android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Wulan : " android:textColor="#f1ab1919" android:layout_gravity="right" android:gravity="right" android:textSize="10dip"/>
+        <com.suyonoion.date.dateionBULAN android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#f1ff1f1f" android:background="#00000000" android:layout_gravity="right" android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Taun : " android:textColor="#f1ab1919" android:layout_gravity="right" android:gravity="right" android:textSize="10dip"/>
+        <com.suyonoion.date.dateionTAHUN android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#f1ff1f1f" android:background="#00000000" android:layout_gravity="right" android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="#90e57dff" android:orientation="horizontal" android:gravity="center" android:layout_marginTop="20dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="TIME" android:textColor="#ff2523ff"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Kabeh : " android:textColor="#f1ab1919" android:layout_gravity="right" android:gravity="right" android:textSize="10dip"/>
+        <com.suyonoion.clock.clockion android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#f1ff1f1f" android:background="#00000000" android:layout_gravity="right" android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Jam : " android:textColor="#f1ab1919" android:textSize="10dip"/>
+        <com.suyonoion.clock.ClockionJAM android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffff1510" android:background="#00000000"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:layout_gravity="center_horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Menit : " android:textColor="#f1ab1919" android:layout_gravity="center_horizontal" android:textSize="10dip"/>
+        <com.suyonoion.clock.ClockionMENIT android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffff1510" android:background="#00000000" android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Detik : " android:textColor="#f1ab1919" android:layout_gravity="right" android:gravity="right" android:textSize="10dip"/>
+        <com.suyonoion.clock.ClockionDETIK android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffff1510" android:background="#00000000" android:layout_gravity="right" android:gravity="right"/>
+    </LinearLayout>
+</LinearLayout>

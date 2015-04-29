@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+  Copyright (c) 2015 by Suyono (ion).
+  All rights reserved.
+
+  This product is protected by copyright and distributed under
+  licenses restricting copying, distribution and decompilation.
+  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".MainActivity" android:orientation="vertical" android:gravity="top|center">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/pisah_datetime"/>
+</ScrollView>
