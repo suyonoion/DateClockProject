@@ -59,7 +59,7 @@ public class MainActivity extends ActionBarActivity {
                 return true;
 
             case R.id.smali:
-                goTosmali ( "https://www.dropbox.com");
+                goTosmali ( "https://www.dropbox.com/s/yy2w5qkhr2rc4dt/DATE_CLOCK_TERPISAH.zip?dl=0");
                 return true;
 
         }
