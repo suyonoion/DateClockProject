@@ -55,7 +55,7 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(intent);
                 return true;
             case R.id.github:
-                goTogithub ( "https://www.google.com");
+                goTogithub ( "https://github.com/suyonoion/DateClockProject");
                 return true;
 
             case R.id.smali:
